@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page by harishan'),
+      home: const MyHomePage(title: 'Rydr App'),
     );
   }
 }
@@ -32,14 +32,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   int bottomNavBarIndex = 0;
 
   @override
@@ -49,33 +41,19 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
+      body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'Hello World, You have pushed the test',
-            ),
             Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              'Welcome to Rydr. App',
             ),
-            ElevatedButton(
-                onPressed: () => print('Button Clicked'), child: Text('test'))
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
       bottomNavigationBar: BottomNavigationBar(
         items: const [
-          BottomNavigationBarItem(
-            label: 'Home',
-            icon: Icon(Icons.home),
-          ),
           BottomNavigationBarItem(
             label: 'Rides',
             icon: Icon(Icons.bike_scooter),
@@ -91,5 +69,14 @@ class _MyHomePageState extends State<MyHomePage> {
         }),
       ),
     );
+  }
+}
+
+class AuthSettings extends StatelessWidget {
+  const AuthSettings({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
