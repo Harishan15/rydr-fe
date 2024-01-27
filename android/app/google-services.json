@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "924683058368",
+    "project_id": "hx-rydr-app",
+    "storage_bucket": "hx-rydr-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924683058368:android:7f394473e2ab640fb58125",
+        "android_client_info": {
+          "package_name": "com.example.rydr_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_IOYATJYOKfPUsawedfvUWuiHENCt16k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
