@@ -36,6 +36,16 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
+// TODO
+// Splash screen
+// Onboarding 3x pages (Sliders)
+// Signup page
+// Login Page
+// Home page
+
+// Connect to database
+// Backend using Nest JS
+
 class _MyHomePageState extends State<MyHomePage> {
   int bottomNavBarIndex = 0;
 
